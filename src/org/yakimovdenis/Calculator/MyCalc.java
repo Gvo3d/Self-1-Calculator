@@ -10,7 +10,12 @@ public class MyCalc {
 
     public MyCalc() {
         this.actions = new CalcAction[]{new MCAdd()};
+        work();
+    }
+
+    private void work(){
         String data = getInputLine();
+        parseLine(data);
     }
 
     private String getInputLine(){
